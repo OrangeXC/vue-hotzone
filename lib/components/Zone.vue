@@ -11,7 +11,7 @@
         'hz-m-hoverbox': !hideZone
       }"
     >
-      <li class="hz-u-index" :title="`热区${index + 1}`">{{index + 1}}</li>
+      <li class="hz-u-index" :title="`热区${index + 1}`">{{ index + 1 }}</li>
       <li
         title="删除该热区"
         v-show="!hideZone"

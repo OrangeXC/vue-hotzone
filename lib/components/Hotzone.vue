@@ -51,16 +51,17 @@ export default {
   methods: {
     changeInfo (res) {
       let { info, index } = res
+
       this.changeItem(info, index)
     },
     addItem (setting = {}) {
       this.zones.push(setting)
-      this.$emit('add', setting)
       this.hasChange()
+      this.$emit('add', setting)
     },
     eraseItem (index = this.zones.length - 1) {
-      this.$emit('erase', index)
       this.removeItem(index)
+      this.$emit('erase', index)
     },
     isOverRange () {
       let { config = {}, zones = [] } = this
@@ -68,13 +69,13 @@ export default {
       return config.hasOwnProperty('maxNum') && zones.length > config.maxNum
     },
     overRange (index = this.zones.length - 1) {
-      this.$emit('overRange', index)
       this.removeItem(index)
+      this.$emit('overRange', index)
     },
     removeItem (index = this.zones.length - 1) {
       this.zones.splice(index, 1)
-      this.$emit('remove', index)
       this.hasChange()
+      this.$emit('remove', index)
     },
     changeItem (info = {}, index = this.zones.length - 1) {
       Object.assign(this.zones[index], info)
