@@ -16,7 +16,7 @@
         title="删除该热区"
         v-show="!hideZone"
         class="hz-u-close hz-icon hz-icon-trash"
-        @click.stop="delItem($event, index)"
+        @click.stop="delItem(index)"
       ></li>
       <li class="hz-u-square hz-u-square-tl" data-pointer="dealTL"></li>
       <li class="hz-u-square hz-u-square-tc" data-pointer="dealTC"></li>
@@ -69,13 +69,14 @@ export default {
       this.hideZone = isHide
     },
     changeInfo (info = {}) {
-      let { index } = this
+      const { index } = this
+
       this.$emit('changeInfo', {
         info,
         index
       })
     },
-    delItem (e, index) {
+    delItem (index) {
       this.$emit('delItem', index)
     },
     getZoneStyle (val) {

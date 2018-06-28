@@ -13,6 +13,7 @@ module.exports = {
   coverageReporters: ['text'],
   collectCoverageFrom: [
     '**/*.{js,vue}',
+    '!**/directives/**',
     '!**/node_modules/**'
   ],
   coverageThreshold: {

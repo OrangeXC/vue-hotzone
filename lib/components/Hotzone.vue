@@ -39,10 +39,11 @@ export default {
     },
     zonesInit: {
       type: Array,
-      required: true
+      default: () => []
     },
     config: {
-      type: Object
+      type: Object,
+      default: () => {}
     }
   },
   mounted () {
@@ -54,7 +55,7 @@ export default {
 
       this.changeItem(info, index)
     },
-    addItem (setting = {}) {
+    addItem (setting) {
       this.zones.push(setting)
       this.hasChange()
       this.$emit('add', setting)
@@ -64,11 +65,13 @@ export default {
       this.$emit('erase', index)
     },
     isOverRange () {
-      let { config = {}, zones = [] } = this
+      let { config, zones } = this
 
       return config.hasOwnProperty('maxNum') && zones.length > config.maxNum
     },
-    overRange (index = this.zones.length - 1) {
+    overRange () {
+      const index = this.zones.length - 1
+
       this.removeItem(index)
       this.$emit('overRange', index)
     },
@@ -77,7 +80,7 @@ export default {
       this.hasChange()
       this.$emit('remove', index)
     },
-    changeItem (info = {}, index = this.zones.length - 1) {
+    changeItem (info, index = this.zones.length - 1) {
       Object.assign(this.zones[index], info)
       this.hasChange()
     },
