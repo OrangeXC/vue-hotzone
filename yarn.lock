@@ -871,7 +871,7 @@
 
 "@vue/preload-webpack-plugin@^1.0.0":
   version "1.0.0"
-  resolved "http://npm.zhaopin.com/@vue%2fpreload-webpack-plugin/-/preload-webpack-plugin-1.0.0.tgz#08f156532909824da2aad258e151742d1e8f822e"
+  resolved "https://registry.yarnpkg.com/@vue/preload-webpack-plugin/-/preload-webpack-plugin-1.0.0.tgz#08f156532909824da2aad258e151742d1e8f822e"
 
 "@vue/test-utils@^1.0.0-beta.20":
   version "1.0.0-beta.20"
@@ -1271,7 +1271,7 @@ aproba@^1.0.3, aproba@^1.1.1:
 
 arch@^2.1.0:
   version "2.1.0"
-  resolved "http://npm.zhaopin.com/arch/-/arch-2.1.0.tgz#3613aa46149064b3c1f0607919bf1d4786e82889"
+  resolved "https://registry.yarnpkg.com/arch/-/arch-2.1.0.tgz#3613aa46149064b3c1f0607919bf1d4786e82889"
 
 are-we-there-yet@~1.1.2:
   version "1.1.4"
@@ -2470,7 +2470,7 @@ cli-width@^2.0.0:
 
 clipboardy@^1.2.3:
   version "1.2.3"
-  resolved "http://npm.zhaopin.com/clipboardy/-/clipboardy-1.2.3.tgz#0526361bf78724c1f20be248d428e365433c07ef"
+  resolved "https://registry.yarnpkg.com/clipboardy/-/clipboardy-1.2.3.tgz#0526361bf78724c1f20be248d428e365433c07ef"
   dependencies:
     arch "^2.1.0"
     execa "^0.8.0"
@@ -2758,7 +2758,7 @@ cross-spawn@^5.0.1, cross-spawn@^5.1.0:
 
 cross-spawn@^6.0.0:
   version "6.0.5"
-  resolved "http://npm.zhaopin.com/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
+  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
   dependencies:
     nice-try "^1.0.4"
     path-key "^2.0.1"
@@ -3190,7 +3190,7 @@ duplexify@^3.4.2, duplexify@^3.6.0:
 
 easy-stack@^1.0.0:
   version "1.0.0"
-  resolved "http://npm.zhaopin.com/easy-stack/-/easy-stack-1.0.0.tgz#12c91b3085a37f0baa336e9486eac4bf94e3e788"
+  resolved "https://registry.yarnpkg.com/easy-stack/-/easy-stack-1.0.0.tgz#12c91b3085a37f0baa336e9486eac4bf94e3e788"
 
 ecc-jsbn@~0.1.1:
   version "0.1.1"
@@ -3463,7 +3463,7 @@ etag@~1.8.1:
 
 event-pubsub@4.3.0:
   version "4.3.0"
-  resolved "http://npm.zhaopin.com/event-pubsub/-/event-pubsub-4.3.0.tgz#f68d816bc29f1ec02c539dc58c8dd40ce72cb36e"
+  resolved "https://registry.yarnpkg.com/event-pubsub/-/event-pubsub-4.3.0.tgz#f68d816bc29f1ec02c539dc58c8dd40ce72cb36e"
 
 eventemitter3@^3.0.0:
   version "3.1.0"
@@ -3494,7 +3494,7 @@ exec-sh@^0.2.0:
 
 execa@^0.10.0:
   version "0.10.0"
-  resolved "http://npm.zhaopin.com/execa/-/execa-0.10.0.tgz#ff456a8f53f90f8eccc71a96d11bdfc7f082cb50"
+  resolved "https://registry.yarnpkg.com/execa/-/execa-0.10.0.tgz#ff456a8f53f90f8eccc71a96d11bdfc7f082cb50"
   dependencies:
     cross-spawn "^6.0.0"
     get-stream "^3.0.0"
@@ -5096,11 +5096,11 @@ js-beautify@^1.6.14:
 
 js-message@1.0.5:
   version "1.0.5"
-  resolved "http://npm.zhaopin.com/js-message/-/js-message-1.0.5.tgz#2300d24b1af08e89dd095bc1a4c9c9cfcb892d15"
+  resolved "https://registry.yarnpkg.com/js-message/-/js-message-1.0.5.tgz#2300d24b1af08e89dd095bc1a4c9c9cfcb892d15"
 
 js-queue@2.0.0:
   version "2.0.0"
-  resolved "http://npm.zhaopin.com/js-queue/-/js-queue-2.0.0.tgz#362213cf860f468f0125fc6c96abc1742531f948"
+  resolved "https://registry.yarnpkg.com/js-queue/-/js-queue-2.0.0.tgz#362213cf860f468f0125fc6c96abc1742531f948"
   dependencies:
     easy-stack "^1.0.0"
 
@@ -5360,7 +5360,7 @@ lodash.defaultsdeep@^4.6.0:
 
 lodash.mapvalues@^4.6.0:
   version "4.6.0"
-  resolved "http://npm.zhaopin.com/lodash.mapvalues/-/lodash.mapvalues-4.6.0.tgz#1bafa5005de9dd6f4f26668c30ca37230cc9689c"
+  resolved "https://registry.yarnpkg.com/lodash.mapvalues/-/lodash.mapvalues-4.6.0.tgz#1bafa5005de9dd6f4f26668c30ca37230cc9689c"
 
 lodash.memoize@^4.1.2:
   version "4.1.2"
@@ -5372,7 +5372,7 @@ lodash.sortby@^4.7.0:
 
 lodash.transform@^4.6.0:
   version "4.6.0"
-  resolved "http://npm.zhaopin.com/lodash.transform/-/lodash.transform-4.6.0.tgz#12306422f63324aed8483d3f38332b5f670547a0"
+  resolved "https://registry.yarnpkg.com/lodash.transform/-/lodash.transform-4.6.0.tgz#12306422f63324aed8483d3f38332b5f670547a0"
 
 lodash.uniq@^4.5.0:
   version "4.5.0"
@@ -5455,7 +5455,7 @@ makeerror@1.0.x:
 
 mamacro@^0.0.3:
   version "0.0.3"
-  resolved "http://npm.zhaopin.com/mamacro/-/mamacro-0.0.3.tgz#ad2c9576197c9f1abf308d0787865bd975a3f3e4"
+  resolved "https://registry.yarnpkg.com/mamacro/-/mamacro-0.0.3.tgz#ad2c9576197c9f1abf308d0787865bd975a3f3e4"
 
 map-cache@^0.2.2:
   version "0.2.2"
@@ -5762,7 +5762,7 @@ next-tick@1:
 
 nice-try@^1.0.4:
   version "1.0.4"
-  resolved "http://npm.zhaopin.com/nice-try/-/nice-try-1.0.4.tgz#d93962f6c52f2c1558c0fbda6d512819f1efe1c4"
+  resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.4.tgz#d93962f6c52f2c1558c0fbda6d512819f1efe1c4"
 
 no-case@^2.2.0:
   version "2.3.2"
@@ -5787,7 +5787,7 @@ node-int64@^0.4.0:
 
 node-ipc@^9.1.1:
   version "9.1.1"
-  resolved "http://npm.zhaopin.com/node-ipc/-/node-ipc-9.1.1.tgz#4e245ed6938e65100e595ebc5dc34b16e8dd5d69"
+  resolved "https://registry.yarnpkg.com/node-ipc/-/node-ipc-9.1.1.tgz#4e245ed6938e65100e595ebc5dc34b16e8dd5d69"
   dependencies:
     event-pubsub "4.3.0"
     js-message "1.0.5"
@@ -6992,13 +6992,13 @@ repeating@^2.0.0:
 
 request-promise-core@1.1.1:
   version "1.1.1"
-  resolved "http://npm.zhaopin.com/request-promise-core/-/request-promise-core-1.1.1.tgz#3eee00b2c5aa83239cfb04c5700da36f81cd08b6"
+  resolved "https://registry.yarnpkg.com/request-promise-core/-/request-promise-core-1.1.1.tgz#3eee00b2c5aa83239cfb04c5700da36f81cd08b6"
   dependencies:
     lodash "^4.13.1"
 
 request-promise-native@^1.0.5:
   version "1.0.5"
-  resolved "http://npm.zhaopin.com/request-promise-native/-/request-promise-native-1.0.5.tgz#5281770f68e0c9719e5163fd3fab482215f4fda5"
+  resolved "https://registry.yarnpkg.com/request-promise-native/-/request-promise-native-1.0.5.tgz#5281770f68e0c9719e5163fd3fab482215f4fda5"
   dependencies:
     request-promise-core "1.1.1"
     stealthy-require "^1.1.0"
@@ -7006,7 +7006,7 @@ request-promise-native@^1.0.5:
 
 request@^2.83.0:
   version "2.87.0"
-  resolved "http://npm.zhaopin.com/request/-/request-2.87.0.tgz#32f00235cd08d482b4d0d68db93a829c0ed5756e"
+  resolved "https://registry.yarnpkg.com/request/-/request-2.87.0.tgz#32f00235cd08d482b4d0d68db93a829c0ed5756e"
   dependencies:
     aws-sign2 "~0.7.0"
     aws4 "^1.6.0"
@@ -7533,7 +7533,7 @@ statuses@~1.4.0:
 
 stealthy-require@^1.1.0:
   version "1.1.1"
-  resolved "http://npm.zhaopin.com/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
+  resolved "https://registry.yarnpkg.com/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
 
 stream-browserify@^2.0.1:
   version "2.0.1"
@@ -8143,7 +8143,7 @@ vue-jest@^2.6.0:
 
 vue-loader@^15.2.0:
   version "15.2.2"
-  resolved "http://npm.zhaopin.com/vue-loader/-/vue-loader-15.2.2.tgz#d845fef2eca64e91042e66315119536e17f1538d"
+  resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-15.2.2.tgz#d845fef2eca64e91042e66315119536e17f1538d"
   dependencies:
     "@vue/component-compiler-utils" "^1.2.1"
     hash-sum "^1.0.2"
@@ -8319,7 +8319,7 @@ webpack-sources@^1.0.1, webpack-sources@^1.1.0:
 
 webpack@^4.14.0:
   version "4.14.0"
-  resolved "http://npm.zhaopin.com/webpack/-/webpack-4.14.0.tgz#bbcc40dbf9a34129491b431574189d3802972243"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.14.0.tgz#bbcc40dbf9a34129491b431574189d3802972243"
   dependencies:
     "@webassemblyjs/ast" "1.5.12"
     "@webassemblyjs/helper-module-context" "1.5.12"
