@@ -41,9 +41,8 @@ export default {
       type: Array,
       default: () => []
     },
-    config: {
-      type: Object,
-      default: () => {}
+    max: {
+      type: Number
     }
   },
   mounted () {
@@ -65,9 +64,9 @@ export default {
       this.$emit('erase', index)
     },
     isOverRange () {
-      let { config, zones } = this
+      let { max, zones } = this
 
-      return config.hasOwnProperty('maxNum') && zones.length > config.maxNum
+      return max && zones.length > max
     },
     overRange () {
       const index = this.zones.length - 1
@@ -97,7 +96,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 @import '../assets/styles/main.css';
 </style>

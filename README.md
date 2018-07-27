@@ -29,7 +29,10 @@ export default {
 // Use in global
 import hotzone from 'vue-hotzone'
 
-Vue.component('hotzone', hotzone)
+Vue.component(hotzone.name, hotzone)
+
+// or
+Vue.use(hotzone)
 ```
 
 ```html
@@ -41,18 +44,21 @@ Vue.component('hotzone', hotzone)
 #### Attributes
 You can set them to your data function
 
-| Attribute      | Type         | Description    | Keys |
-| :------------- |:-------------|:---------------| :------ |
-| zones          | Array        |  hotzones(required: true) |  heightPer, leftPer, topPer, widthPer |
-| image          | String       |  image of hotzone |  |
+| Attribute | Type   | Description                      | Keys                                       |
+|:----------|:-------|:---------------------------------|:-------------------------------------------|
+| image     | String | image of hotzone(required: true) |                                            |
+| max       | Number | max number of zones              |                                            |
+| zonesInit | Array  | init zones                       | item(heightPer, leftPer, topPer, widthPer) |
 
 #### Events
 
-| Event Name     | description    | Parameters |
-| :------------- |:---------------| :--------- |
-| change         | triggers when the zones changes |  the array of the zones |
-| add            | triggers when the zone add |  the add zone item |
-| remove         | triggers when the zone remove |  the index of the remove zone |
+| Event Name | Description                                                              | Parameters                      |
+|:-----------|:-------------------------------------------------------------------------|:--------------------------------|
+| change     | triggers when the zones changes                                          | the array of the zones          |
+| add        | triggers when the zone add                                               | the add zone item               |
+| remove     | triggers when the zone remove                                            | the index of the remove zone    |
+| overRange  | triggers when zones number > max                                         | the index of the overRange zone |
+| erase      | triggers when add zone overRange or smaller than the minimum area(48*48) | the index of the erase zone     |
 
 ### Develop
 
@@ -61,13 +67,9 @@ git clone https://github.com/OrangeXC/vue-hotzone.git
 
 cd vue-hotzone
 
-yarn
-# or
-npm i
+yarn # or npm install
 
-npm run serve
-# or
-yarn serve
+yarn serve # or npm run serve
 ```
 
 ### License

@@ -45,7 +45,7 @@ export default {
   name: 'app',
   data: function () {
     return {
-      image: "https://haitao.nos.netease.com/EbrC2L4UuXFI1CPmWall%20o207T1705221905_1920_1080.jpg",
+      image: 'https://haitao.nos.netease.com/EbrC2L4UuXFI1CPmWall%20o207T1705221905_1920_1080.jpg',
       zones: [{
         heightPer: 0.4374,
         leftPer: 0.1153,
@@ -81,7 +81,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 #app {
   width: 980px;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -94,20 +94,20 @@ export default {
 
 .wrap {
   position: relative;
+}
 
-  img {
-    width: 100%;
-    user-select: none;
-    -webkit-user-drag: none;
-    -webkit-touch-callout: none;
-  }
+.wrap img {
+  width: 100%;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
 
-  .zone {
-    position: absolute;
-    cursor: pointer;
+.wrap .zone {
+  position: absolute;
+  cursor: pointer;
 
-    border: 2px dashed red;
-  }
+  border: 2px dashed red;
 }
 
 input {
@@ -123,10 +123,10 @@ input {
   color: #555;
 
   transition: all 0.30s ease-in-out;
+}
 
-  &:focus {
-    box-shadow: 0 0 5px #43D1AF;
-    border: 1px solid #43D1AF;
-  }
+input:focus {
+  box-shadow: 0 0 5px #43D1AF;
+  border: 1px solid #43D1AF;
 }
 </style>
