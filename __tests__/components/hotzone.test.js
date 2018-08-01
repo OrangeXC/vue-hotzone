@@ -29,9 +29,7 @@ describe('component: Hotzone', () => {
       propsData: {
         image: mocks.image,
         zonesInit: mocks.zonesInit,
-        config: {
-          maxNum: 5
-        }
+        max: 5
       }
     }
 
@@ -46,7 +44,7 @@ describe('component: Hotzone', () => {
     expect(wrapper.props().zonesInit).toEqual(mocks.zonesInit)
     expect(wrapper.vm.zones).toEqual(mocks.zonesInit)
 
-    expect(wrapper.props().config).toEqual(options.propsData.config)
+    expect(wrapper.props().max).toEqual(options.propsData.max)
   })
 
   test('methods: changeInfo', () => {
@@ -119,18 +117,14 @@ describe('component: Hotzone', () => {
       propsData: {
         image: mocks.image,
         zonesInit: mocks.zonesInit,
-        config: {
-          maxNum: 1
-        }
+        max: 1
       }
     })
 
     expect(wrapper.vm.isOverRange()).toBeTruthy()
 
     wrapper.setProps({
-      config: {
-        maxNum: 2
-      }
+      max: 2
     })
 
     expect(wrapper.vm.isOverRange()).toBeFalsy()
