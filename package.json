@@ -9,7 +9,9 @@
     "lint": "vue-cli-service lint",
     "test": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "eslint": "^5.12.0"
+  },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.3.0",
     "@vue/cli-plugin-eslint": "^3.3.0",
@@ -20,10 +22,10 @@
     "babel-jest": "^23.6.0",
     "babel-preset-env": "^2.0.0-alpha.20",
     "jest": "^23.6.0",
-    "vue": "^2.5.21",
+    "vue": "^2.5.22",
     "vue-jest": "^3.0.2",
-    "vue-template-compiler": "^2.5.21",
-    "webpack": "^4.28.3"
+    "vue-template-compiler": "^2.5.22",
+    "webpack": "^4.28.4"
   },
   "babel": {
     "presets": [
