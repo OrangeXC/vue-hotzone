@@ -20,7 +20,7 @@
     "babel-jest": "^24.1.0",
     "babel-preset-env": "^2.0.0-alpha.20",
     "eslint": "^5.13.0",
-    "eslint-plugin-vue": "^5.1.0",
+    "eslint-plugin-vue": "^5.2.1",
     "jest": "^24.1.0",
     "vue": "^2.6.6",
     "vue-jest": "^3.0.3",
