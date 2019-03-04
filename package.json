@@ -19,13 +19,13 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.1.0",
     "babel-preset-env": "^2.0.0-alpha.20",
-    "eslint": "^5.14.1",
+    "eslint": "^5.15.0",
     "eslint-plugin-vue": "^5.2.2",
     "jest": "^24.1.0",
-    "vue": "^2.6.7",
+    "vue": "^2.6.8",
     "vue-jest": "^3.0.3",
-    "vue-template-compiler": "^2.6.7",
-    "webpack": "^4.29.5"
+    "vue-template-compiler": "^2.6.8",
+    "webpack": "^4.29.6"
   },
   "babel": {
     "presets": [
