@@ -49,6 +49,7 @@ You can set them to your data function
 | image     | String | image of hotzone(required: true) |                                            |
 | max       | Number | max number of zones              |                                            |
 | zonesInit | Array  | init zones                       | item(heightPer, leftPer, topPer, widthPer) |
+| minLimit  | Number | Minimum square size of zone      |                                            |
 
 #### Events
 

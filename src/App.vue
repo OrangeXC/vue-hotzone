@@ -4,12 +4,14 @@
     <hr>
     <h2>Try drag red area or drag create a new area</h2>
     <h2>👇</h2>
+    <input v-model="limit">
     <hotzone
       :image="image"
       :zonesInit="zones"
       @add="handleAdd"
       @remove="handleRemove"
       @change="handleChange"
+      :minLimit="limit"
     ></hotzone>
     <input
       type="text"
@@ -39,52 +41,56 @@
 </template>
 
 <script>
-import hotzone from '../lib'
+import hotzone from "../lib";
 
 export default {
-  name: 'app',
-  data: function () {
+  name: "app",
+  data: function() {
     return {
-      image: 'https://haitao.nos.netease.com/EbrC2L4UuXFI1CPmWall%20o207T1705221905_1920_1080.jpg',
-      zones: [{
-        heightPer: 0.4374,
-        leftPer: 0.1153,
-        topPer: 0.238,
-        widthPer: 0.2827,
-        url: 'https://github.com/OrangeXC'
-      }]
-    }
+      image:
+        "https://haitao.nos.netease.com/EbrC2L4UuXFI1CPmWall%20o207T1705221905_1920_1080.jpg",
+      zones: [
+        {
+          heightPer: 0.4374,
+          leftPer: 0.1153,
+          topPer: 0.238,
+          widthPer: 0.2827,
+          url: "https://github.com/OrangeXC"
+        }
+      ],
+      limit: 10
+    };
   },
   methods: {
-    handleAdd (zone) {
-      zone.url = this.zones.length ? '' : 'https://github.com/OrangeXC'
+    handleAdd(zone) {
+      zone.url = this.zones.length ? "" : "https://github.com/OrangeXC";
 
-      this.zones.push(zone)
+      this.zones.push(zone);
     },
-    handleRemove (index) {
-      this.zones.splice(index, 1)
+    handleRemove(index) {
+      this.zones.splice(index, 1);
     },
-    handleChange () {
+    handleChange() {
       // eslint-disable-next-line
-      console.log('Zones data updated')
+      console.log("Zones data updated");
     },
-    getZoneStyle (val) {
-      return `${(val || 0) * 100}%`
+    getZoneStyle(val) {
+      return `${(val || 0) * 100}%`;
     },
-    handleZoneClick (url) {
-      url && window.open(url)
+    handleZoneClick(url) {
+      url && window.open(url);
     }
   },
   components: {
     hotzone
   }
-}
+};
 </script>
 
 <style>
 #app {
   width: 980px;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -122,11 +128,11 @@ input {
 
   color: #555;
 
-  transition: all 0.30s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 input:focus {
-  box-shadow: 0 0 5px #43D1AF;
-  border: 1px solid #43D1AF;
+  box-shadow: 0 0 5px #43d1af;
+  border: 1px solid #43d1af;
 }
 </style>

@@ -1,13 +1,7 @@
 <template>
-  <div
-    ref="content"
-    class="hz-m-wrap"
-  >
-    <img class="hz-u-img" :src="image" />
-    <ul
-      class="hz-m-area"
-      v-add-item
-    >
+  <div ref="content" class="hz-m-wrap">
+    <img class="hz-u-img" :src="image">
+    <ul class="hz-m-area" v-add-item:limit="minLimit">
       <zone
         class="hz-m-item"
         v-for="(zone, index) in zones"
@@ -22,15 +16,15 @@
 </template>
 
 <script>
-import Zone from './Zone'
-import addItem from '../directives/addItem'
+import Zone from "./Zone";
+import addItem from "../directives/addItem";
 
 export default {
-  name: 'HotZone',
-  data () {
+  name: "HotZone",
+  data() {
     return {
       zones: []
-    }
+    };
   },
   props: {
     image: {
@@ -43,48 +37,52 @@ export default {
     },
     max: {
       type: Number
+    },
+    minLimit: {
+      type: Number,
+      default: 48
     }
   },
-  mounted () {
-    this.zones = this.zonesInit.concat()
+  mounted() {
+    this.zones = this.zonesInit.concat();
   },
   methods: {
-    changeInfo (res) {
-      let { info, index } = res
+    changeInfo(res) {
+      let { info, index } = res;
 
-      this.changeItem(info, index)
+      this.changeItem(info, index);
     },
-    addItem (setting) {
-      this.zones.push(setting)
-      this.hasChange()
-      this.$emit('add', setting)
+    addItem(setting) {
+      this.zones.push(setting);
+      this.hasChange();
+      this.$emit("add", setting);
     },
-    eraseItem (index = this.zones.length - 1) {
-      this.removeItem(index)
-      this.$emit('erase', index)
+    eraseItem(index = this.zones.length - 1) {
+      this.removeItem(index);
+      this.$emit("erase", index);
     },
-    isOverRange () {
-      let { max, zones } = this
+    isOverRange() {
+      let { max, zones } = this;
 
-      return max && zones.length > max
+      return max && zones.length > max;
     },
-    overRange () {
-      const index = this.zones.length - 1
+    overRange() {
+      const index = this.zones.length - 1;
 
-      this.removeItem(index)
-      this.$emit('overRange', index)
+      this.removeItem(index);
+      this.$emit("overRange", index);
     },
-    removeItem (index = this.zones.length - 1) {
-      this.zones.splice(index, 1)
-      this.hasChange()
-      this.$emit('remove', index)
+    removeItem(index = this.zones.length - 1) {
+      this.zones.splice(index, 1);
+      this.hasChange();
+      this.$emit("remove", index);
     },
-    changeItem (info, index = this.zones.length - 1) {
-      Object.assign(this.zones[index], info)
-      this.hasChange()
+    changeItem(info, index = this.zones.length - 1) {
+      Object.assign(this.zones[index], info);
+      this.hasChange();
     },
-    hasChange () {
-      this.$emit('change', this.zones)
+    hasChange() {
+      this.$emit("change", this.zones);
     }
   },
   directives: {
@@ -93,9 +91,9 @@ export default {
   components: {
     Zone
   }
-}
+};
 </script>
 
 <style scoped>
-@import '../assets/styles/main.css';
+@import "../assets/styles/main.css";
 </style>
