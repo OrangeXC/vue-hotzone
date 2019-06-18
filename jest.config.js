@@ -1,19 +1,35 @@
 module.exports = {
   roots: ['__tests__'],
-  moduleFileExtensions: ['js', 'json', 'vue'],
+  moduleFileExtensions: [
+    'js',
+    'jsx',
+    'json',
+    'vue'
+  ],
   transform: {
-    '^.+\\.js$': '<rootDir>/node_modules/babel-jest',
-    '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest'
+    '^.+\\.vue$': 'vue-jest',
+    '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
+    '^.+\\.jsx?$': 'babel-jest'
   },
+  transformIgnorePatterns: [
+    '/node_modules/'
+  ],
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/src/$1'
+  },
+  snapshotSerializers: [
+    'jest-serializer-vue'
+  ],
   testURL: 'http://localhost/',
-  resetModules: true,
-  clearMocks: true,
-  verbose: true,
+  watchPlugins: [
+    'jest-watch-typeahead/filename',
+    'jest-watch-typeahead/testname'
+  ],
   collectCoverage: true,
   coverageReporters: ['text'],
   collectCoverageFrom: [
     '**/*.{js,vue}',
-    '!**/directives/**',
+    '!**/lib/directives/**',
     '!**/node_modules/**'
   ],
   coverageThreshold: {

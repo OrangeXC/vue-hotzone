@@ -1,4 +1,3 @@
-/* eslint-env jest */
 import { mount } from '@vue/test-utils'
 import Hotzone from '../../lib/components/Hotzone'
 
@@ -212,5 +211,3 @@ describe('component: Hotzone', () => {
     expect(wrapper.emitted('change')[0][0]).toEqual(mocks.zonesInit)
   })
 })
-
-

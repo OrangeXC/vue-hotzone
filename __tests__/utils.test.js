@@ -1,4 +1,3 @@
-/* eslint-env jest */
 import _ from '../lib/utils'
 
 describe('utils', () => {
@@ -55,7 +54,7 @@ describe('utils', () => {
 
     expect(_.getPageY(elem)).toBe(26)
 
-    delete(elem.pageY)
+    delete elem.pageY
 
     expect(_.getPageY(elem)).toBe(18)
   })
@@ -187,7 +186,7 @@ describe('utils', () => {
 
     expect(_.dealTL(itemInfo, 100, 2)).toEqual({
       top: 6,
-      height: 98,
+      height: 98
     })
 
     expect(_.dealTL(itemInfo, 2, 100)).toEqual({

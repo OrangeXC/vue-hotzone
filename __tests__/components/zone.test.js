@@ -1,4 +1,3 @@
-/* eslint-env jest */
 import { mount } from '@vue/test-utils'
 import Zone from '../../lib/components/Zone'
 
