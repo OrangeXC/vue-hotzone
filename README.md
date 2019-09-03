@@ -1,20 +1,28 @@
-# vue-hotzone
+<p align="center"><img width="100" src="https://i.loli.net/2019/09/03/dSJuMvDHA4izh3k.png" alt="vue-hotzone logo"></p>
 
-> A vue2 hotzone component
+<p align="center">
+  <a href="https://travis-ci.com/OrangeXC/vue-hotzone"><img src="https://travis-ci.com/OrangeXC/vue-hotzone.svg?branch=master" alt="Build Status"></a>
+  <a href="https://codecov.io/gh/OrangeXC/vue-hotzone"><img src="https://img.shields.io/codecov/c/github/OrangeXC/vue-hotzone/master.svg" alt="Coverage Status"></a>
+  <a href="https://npmcharts.com/compare/vue-hotzone?minimal=true"><img src="https://img.shields.io/npm/dm/vue-hotzone" alt="Npm download"></a>
+  <a href="https://www.npmjs.com/package/vue-hotzone"><img src="https://img.shields.io/npm/v/vue-hotzone" alt="Npm version"></a>
+  <a href="https://github.com/OrangeXC/vue-hotzone/blob/master/LICENSE"><img src="https://img.shields.io/github/license/orangexc/vue-hotzone" alt="GitHub License"></a>
+</p>
 
-[![NPM](https://nodei.co/npm/vue-hotzone.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vue-hotzone/)
+## Introduction
 
-## [Demo](http://orangex_c.coding.me/vue-hotzone/) | [案例](http://orangex_c.coding.me/vue-hotzone/)
+A vue2 hotzone component
 
-### Install
+### [Demo](http://orangex_c.coding.me/vue-hotzone/) | [案例](http://orangex_c.coding.me/vue-hotzone/)
+
+## Install
 
 ```bash
-npm install vue-hotzone --save
+npm i vue-hotzone --save
 # or
 yarn add vue-hotzone
 ```
 
-### Use
+## Use
 
 ```js
 // Use in component
@@ -39,9 +47,9 @@ Vue.use(hotzone)
 <hotzone [options]></hotzone>
 ```
 
-### Options
+## Options
 
-#### Attributes
+### Attributes
 You can set them to your data function
 
 | Attribute | Type   | Description                      | Keys                                       |
@@ -50,7 +58,7 @@ You can set them to your data function
 | max       | Number | max number of zones              |                                            |
 | zonesInit | Array  | init zones                       | item(heightPer, leftPer, topPer, widthPer) |
 
-#### Events
+### Events
 
 | Event Name | Description                                                              | Parameters                      |
 |:-----------|:-------------------------------------------------------------------------|:--------------------------------|
@@ -60,18 +68,18 @@ You can set them to your data function
 | overRange  | triggers when zones number > max                                         | the index of the overRange zone |
 | erase      | triggers when add zone overRange or smaller than the minimum area(48*48) | the index of the erase zone     |
 
-### Develop
+## Develop
 
 ```bash
-git clone https://github.com/OrangeXC/vue-hotzone.git
+$ git clone https://github.com/OrangeXC/vue-hotzone.git
 
-cd vue-hotzone
+$ cd vue-hotzone
 
-yarn # or npm install
+$ yarn
 
-yarn serve # or npm run serve
+$ yarn serve
 ```
 
-### License
+## License
 
-MIT
+Vue-hotzone is [MIT licensed](https://github.com/OrangeXC/vue-hotzone/blob/master/LICENSE).
