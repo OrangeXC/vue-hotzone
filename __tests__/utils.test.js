@@ -39,7 +39,7 @@ describe('utils', () => {
 
     expect(_.getPageX(elem)).toBe(26)
 
-    delete(elem.pageX)
+    delete elem.pageX
 
     expect(_.getPageX(elem)).toBe(18)
   })
