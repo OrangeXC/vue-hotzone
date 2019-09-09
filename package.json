@@ -11,7 +11,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.5.5",
+    "@babel/core": "^7.6.0",
     "@vue/cli-plugin-babel": "^4.0.0-rc.0",
     "@vue/cli-plugin-eslint": "^4.0.0-rc.0",
     "@vue/cli-plugin-unit-jest": "^4.0.0-rc.0",
@@ -25,7 +25,7 @@
     "eslint": "^6.3.0",
     "eslint-plugin-vue": "^5.2.3",
     "vue": "^2.6.10",
-    "vue-jest": "^3.0.4",
+    "vue-jest": "^3.0.5",
     "vue-template-compiler": "^2.6.10"
   }
 }
