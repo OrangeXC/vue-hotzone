@@ -1,4 +1,4 @@
-import _ from '../lib/utils'
+import _ from '../../lib/utils'
 
 describe('utils', () => {
   test('getMultiple', () => {

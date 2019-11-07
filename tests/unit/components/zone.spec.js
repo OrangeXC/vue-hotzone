@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Zone from '../../lib/components/Zone'
+import Zone from '../../../lib/components/Zone'
 
 describe('component: Zone', () => {
   const mocks = {

@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Hotzone from '../../lib/components/Hotzone'
+import Hotzone from '../../../lib/components/Hotzone'
 
 describe('component: Hotzone', () => {
   const mocks = {
