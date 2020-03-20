@@ -12,7 +12,7 @@
 
 A vue2 hotzone component
 
-### [Demo](http://orangex_c.coding.me/vue-hotzone/) | [案例](http://orangex_c.coding.me/vue-hotzone/)
+### [Demo](https://vue-hotzone.orangexc.xyz/) | [案例](https://vue-hotzone.orangexc.xyz/)
 
 ## Install
 
