@@ -17,10 +17,11 @@
     "@vue/test-utils": "1.1.1",
     "babel-eslint": "10.1.0",
     "codecov": "3.8.1",
-    "core-js": "3.8.0",
+    "core-js": "3.8.1",
     "eslint": "7.15.0",
     "eslint-plugin-vue": "7.2.0",
     "vue": "2.6.12",
     "vue-template-compiler": "2.6.12"
-  }
+  },
+  "dependencies": {}
 }
